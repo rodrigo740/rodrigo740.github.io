@@ -1595,7 +1595,7 @@ section {
   color: #3498db;
 }
 
-/*------------------------------------*/
+/*---TASKS-----------------------------------*/
 body{
   margin-top:20px;
   background:white;
@@ -1637,4 +1637,10 @@ taskList {
 }
 .text-muted {
   color: #98a6ad!important;
+}
+
+/*-------------------------------*/
+
+.chart_div svg {
+  font-family: "Raleway", sans-serif !important;
 }
