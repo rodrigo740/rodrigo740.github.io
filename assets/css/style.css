@@ -27,6 +27,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# Gantt
+--------------------------------------------------------------*/
+
+.gantt {
+  display: inline-block; /* shrink to fit */
+  width: 100%;           /* whatever width you like */
+  position: relative;    /* so .content can use position: absolute */
+}
+.gantt::after {
+  padding-top: 35%; /* percentage of containing block _width_ */
+  display: block;
+  content: '';
+}
+.gantt-content {
+  position: absolute;
+  top: 0; bottom: 0; right: 20%; left: 20%;  /* follow the parent's edges */
+}
+
+/*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
