@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .gantt {
   display: inline-block; /* shrink to fit */
-  width: 100%;           /* whatever width you like */
+  width: 50%;           /* whatever width you like */
   position: relative;    /* so .content can use position: absolute */
 }
 .gantt::after {
@@ -42,7 +42,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .gantt-content {
   position: absolute;
-  top: 0; bottom: 0; right: 20%; left: 20%;  /* follow the parent's edges */
+  margin: 0 auto;
+  top: 0; bottom: 0; right: 0%; left: 20%;  /* follow the parent's edges */
 }
 
 /*--------------------------------------------------------------
