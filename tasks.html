@@ -59,20 +59,48 @@
             data.addColumn('string', 'Dependencies');
 
             data.addRows([
+                /*M1*/
                 ['Research', 'Find related work',
-                    new Date(2021, 2, 17), new Date(2021, 2, 23), null, 100, null],
+                    new Date(2021, 3, 17), new Date(2021, 3, 23), null, 100, null],
                 ['Ideas', 'Brainstorming new ideas',
-                    new Date(2021, 2, 20), new Date(2021, 2, 25), daysToMilliseconds(3), 25, 'Research'],
-                /*['Cite', 'Create bibliography',
-                    null, new Date(2021, 2, 7), daysToMilliseconds(1), 20, 'Research'],
-                ['Complete', 'Hand in paper',
-                    null, new Date(2021, 2, 10), daysToMilliseconds(1), 0, 'Cite,Ideas'],
-                ['Outline', 'Outline paper',
-                    null, new Date(2021, 2, 6), daysToMilliseconds(1), 100, 'Research']*/
+                    new Date(2021, 3, 20), new Date(2021, 3, 25), daysToMilliseconds(3), 25, 'Research'],
+                /*M2*/
+                ['d', 'Extended CAMs could be a DENM',
+                    new Date(2021, 3, 25), new Date(2021, 4, 14), null, 0, null],
+                ['g', 'Optimize and implement more features to the web app',
+                new Date(2021, 3, 25), new Date(2021, 4, 14), null, 0, null],
+               
+
+                /*M3*/
+                ['a', 'Add livestream of gateway car',
+                    new Date(2021, 4, 15), new Date(2021, 5, 18), daysToMilliseconds(3), 0, null],
+                ['c', 'Improve gateway detection algorithm',
+                    new Date(2021, 4, 15), new Date(2021, 5, 18), null, 0, null],
+                ['e', 'Basic security in the API and Database',
+                    new Date(2021, 4, 15), new Date(2021, 5, 18), null, 0, null],
+                ['f', 'Check if the car is burning',
+                    new Date(2021, 4, 15), new Date(2021, 5, 18), null, 0, null],
+                ['k', 'In severity calculations get in count meteorology and car messages like oil pressure, airbags, engine temperature',
+                    new Date(2021, 4, 14),new Date(2021, 4, 20), null, 0, null],
+                
+                /*M4*/
+                ['b', 'Add live location of emergency services',
+                    new Date(2021, 5, 19), new Date(2021, 6, 15), null, 0, 'a'],
+                ['i', 'API communication about congested areas',
+                    new Date(2021, 5, 19), new Date(2021, 6, 15), null, 0, null],
+                ['h', 'Add statistics',
+                    new Date(2021, 5, 19), new Date(2021, 6, 15), null, 0, null],
+                ['j', 'Advice about dangerous days(statistics)',
+                    new Date(2021, 5, 19), new Date(2021, 6, 15), null, 0, 'h']
+                
+                
+                
+                
+                 
             ]);
 
             var options = {
-                height: 400
+                height: 1200
             };
 
 
@@ -138,20 +166,21 @@
                                     here.</p>-->
                                 <ul class="sortable-list taskList list-unstyled ui-sortable" id="upcoming">
                                     <li id="task1" class="ui-sortable-handle">
-                                        Module: Web App
-                                        <p>Implementation of Web Application communication with vehicles near a crashed
-                                        vehicle. </p>
+                                        Module: Communication
+                                        <p>Add DENMs to the communication system.</p>
                                         <div class="clearfix"></div>
                                         <div class="mt-3">
                                             <p class="mb-0">
                                                 <a href="" class="text-muted">
-                                                    <img src="assets/img/team/manuel.jpeg" alt="task-user"
+                                                    <img src="assets/img/team/lucia.jpeg" alt="task-user"
                                                         class="thumb-sm rounded-circle mr-2">
-                                                    <img src="assets/img/team/rafael.jpeg" alt="task-user"
+                                                    <img src="assets/img/team/raquel.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                        <img src="assets/img/team/rodrigo.jpeg" alt="task-user"
                                                         class="thumb-sm rounded-circle mr-2">
                                                     
                                                     <p>
-                                                        <span class="font-bold font-secondary">Manuel and Rafael</span>
+                                                        <span class="font-bold font-secondary">Lúcia, Raquel and Rodrigo</span>
                                                     </p>
                                                 </a>
 
@@ -160,7 +189,7 @@
                                     </li>
                                     <li id="task9" class="ui-sortable-handle">
                                         Module: Web App
-                                        <p>Sending video and data on crashed vehicles to the Web Application.</p>
+                                        <p>Optimize and implement more features to the web app.</p>
                                         <div class="clearfix"></div>
                                         <div class="mt-3">
                                             <p class="mb-0">
@@ -179,7 +208,7 @@
                                     </li>
                                     <li id="task3" class="ui-sortable-handle">
                                         Module: Web App
-                                        <p>Presentation of the information in the Web Application.</p>
+                                        <p>Add livestream of gateway car.</p>
                                         <div class="clearfix"></div>
                                         <div class="mt-3">
                                             <p class="mb-0">
@@ -200,7 +229,7 @@
 
                                     <li id="task3" class="ui-sortable-handle">
                                         Module: Communication
-                                        <p>New communication system.</p>
+                                        <p>Improve gateway detection algorithm.</p>
                                         <div class="clearfix"></div>
                                         <div class="mt-3">
                                             <p class="mb-0">
@@ -223,7 +252,7 @@
                                     </li>
 
                                     <li id="task4" class="ui-sortable-handle">
-                                        Full system integration.
+                                        Basic security in the API and Database.
                                         <div class="clearfix"></div>
                                         <div class="mt-3">
                                             <p class="mb-0">
@@ -246,6 +275,157 @@
                                             </p>
                                         </div>
                                     </li>
+
+                                    <li id="task4" class="ui-sortable-handle">
+                                        Check if the car is burning.
+                                        <div class="clearfix"></div>
+                                        <div class="mt-3">
+                                            <p class="mb-0">
+                                                <a href="" class="text-muted"><img src="assets/img/team/lucia.jpeg"
+                                                        alt="task-user" class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/manuel.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/rafael.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/raquel.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/rodrigo.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <p>
+                                                        <span class="font-bold font-secondary">Lúcia, Manuel, Rafael, Raquel
+                                                            and Rodrigo</span>
+                                                    </p>
+                                                </a>
+
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li id="task4" class="ui-sortable-handle">
+                                        In severity calculations get in count meteorology and car messages like oil pressure, airbags, engine temperature.
+                                        <div class="clearfix"></div>
+                                        <div class="mt-3">
+                                            <p class="mb-0">
+                                                <a href="" class="text-muted"><img src="assets/img/team/lucia.jpeg"
+                                                        alt="task-user" class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/manuel.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/rafael.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/raquel.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/rodrigo.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <p>
+                                                        <span class="font-bold font-secondary">Lúcia, Manuel, Rafael, Raquel
+                                                            and Rodrigo</span>
+                                                    </p>
+                                                </a>
+
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li id="task4" class="ui-sortable-handle">
+                                        Add live location of emergency services.
+                                        <div class="clearfix"></div>
+                                        <div class="mt-3">
+                                            <p class="mb-0">
+                                                <a href="" class="text-muted"><img src="assets/img/team/lucia.jpeg"
+                                                        alt="task-user" class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/manuel.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/rafael.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/raquel.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/rodrigo.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <p>
+                                                        <span class="font-bold font-secondary">Lúcia, Manuel, Rafael, Raquel
+                                                            and Rodrigo</span>
+                                                    </p>
+                                                </a>
+
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li id="task4" class="ui-sortable-handle">
+                                        API communication about congested areas.
+                                        <div class="clearfix"></div>
+                                        <div class="mt-3">
+                                            <p class="mb-0">
+                                                <a href="" class="text-muted"><img src="assets/img/team/lucia.jpeg"
+                                                        alt="task-user" class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/manuel.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/rafael.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/raquel.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/rodrigo.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <p>
+                                                        <span class="font-bold font-secondary">Lúcia, Manuel, Rafael, Raquel
+                                                            and Rodrigo</span>
+                                                    </p>
+                                                </a>
+
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li id="task4" class="ui-sortable-handle">
+                                        Add statistics.
+                                        <div class="clearfix"></div>
+                                        <div class="mt-3">
+                                            <p class="mb-0">
+                                                <a href="" class="text-muted"><img src="assets/img/team/lucia.jpeg"
+                                                        alt="task-user" class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/manuel.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/rafael.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/raquel.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/rodrigo.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <p>
+                                                        <span class="font-bold font-secondary">Lúcia, Manuel, Rafael, Raquel
+                                                            and Rodrigo</span>
+                                                    </p>
+                                                </a>
+
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li id="task4" class="ui-sortable-handle">
+                                        Advice about dangerous days(statistics).
+                                        <div class="clearfix"></div>
+                                        <div class="mt-3">
+                                            <p class="mb-0">
+                                                <a href="" class="text-muted"><img src="assets/img/team/lucia.jpeg"
+                                                        alt="task-user" class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/manuel.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/rafael.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/raquel.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <img src="assets/img/team/rodrigo.jpeg" alt="task-user"
+                                                        class="thumb-sm rounded-circle mr-2">
+                                                    <p>
+                                                        <span class="font-bold font-secondary">Lúcia, Manuel, Rafael, Raquel
+                                                            and Rodrigo</span>
+                                                    </p>
+                                                </a>
+
+                                            </p>
+                                        </div>
+                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -337,12 +517,12 @@
         <p style="margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px; border-color: white; border-style:solid;">
         </p>
         <!--<section id ="g" class="team section-bg"></section>-->
-        <div class="gantt">
-            <div class="gantt-content">
+        <!--<div class="gantt">-->
+           <!-- <div class="gantt-content">-->
                 <div id="chart_div">
                 </div>
-            </div>
-        </div>
+           <!-- </div>
+        </div>-->
     </section>
     <!-- End #main -->
 
