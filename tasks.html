@@ -72,15 +72,15 @@
 
                 /*M3*/
                 ['a', 'Add livestream of gateway car',
-                    new Date(2021, 3, 15), new Date(2021, 4, 25), daysToMilliseconds(3), 75, 'l'],
+                    new Date(2021, 3, 15), new Date(2021, 4, 25), daysToMilliseconds(3), 100, 'l'],
                 ['c', 'Improve gateway detection algorithm',
-                    new Date(2021, 3, 15), new Date(2021, 5, 1), null, 45, 'l'],
+                    new Date(2021, 3, 15), new Date(2021, 5, 2), null, 100, 'l'],
                 ['e', 'Basic security in the API and Database',
                     new Date(2021, 2, 25), new Date(2021, 3, 1), null, 100, 'Ideas'],
                 ['f', 'Check if the car is burning',
                     new Date(2021, 2, 25), new Date(2021, 3, 1), null, 100, 'Ideas'],
-                ['k', 'More information in severity calculations',
-                    new Date(2021, 2, 25), new Date(2021, 3, 1), null, 70, 'Ideas'],
+                ['k', 'More information in severity calculations (fire)',
+                    new Date(2021, 2, 25), new Date(2021, 3, 1), null, 100, 'Ideas'],
 
                 /*M4*/
                 ['b', 'Add live location of emergency services',
@@ -88,12 +88,14 @@
                 ['i', 'API communication about congested areas',
                     new Date(2021, 3, 23), new Date(2021, 4, 20), null,100 , 'Ideas'],
                 ['m', 'Ambulance routes',
-                    new Date(2021, 4, 11), new Date(2021, 4, 20), null,40, 'Ideas'],
-                ['h', 'Add statistics',
-                    new Date(2021, 4, 20), new Date(2021, 4, 30), null, 0, 'Ideas'],
-                ['j', 'Advice about dangerous days(statistics)',
-                    new Date(2021, 4, 20), new Date(2021, 4, 30), null, 0, 'Ideas'],
-                
+                    new Date(2021, 4, 11), new Date(2021, 4, 30), null,100 , 'Ideas'],
+                ['j', 'Add nearby cars ',
+                    new Date(2021, 4, 15), new Date(2021, 4, 22), null, 100, 'Ideas'],
+                ['o', 'Implement some details',
+                    new Date(2021, 4, 30), new Date(2021, 5, 2), null, 100, 'Ideas'],
+                ['n', 'Test the project and record video',
+                    new Date(2021, 5, 2), new Date(2021, 5, 14), null, 50, 'Ideas'],
+               
             ]);
 
             var options = {
@@ -162,7 +164,14 @@
                                 <!--<p class="text-muted m-b-30 font-13">Your awesome text goes here. Your awesome text goes
                                     here.</p>-->
                                 <ul class="sortable-list taskList list-unstyled ui-sortable" id="upcoming">
-
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card-box">
+                                <h4 class="text-dark header-title">In Progress</h4>
+                                <ul class="sortable-list taskList list-unstyled ui-sortable" id="inprogress">                            
+                                    
                                     <li id="task4" class="ui-sortable-handle">
                                         Module: Communication & Web App
                                         <p>Report and documentation.</p>
@@ -191,114 +200,11 @@
                                             </p>
                                         </div>
                                     </li>
-
-                                    <li id="task4" class="ui-sortable-handle">
-                                        Module: Web App
-                                        <p>Add statistics.</p>
-                                        <div class="clearfix"></div>
-                                        <div class="mt-3">
-                                            <p class="mb-0">
-                                                <a href="" class="text-muted">
-                                                    <a href="/#team">
-                                                        <img src="assets/img/team/manuel.jpeg" alt="task-user"
-                                                            class="thumb-sm rounded-circle mr-2">
-                                                        <img src="assets/img/team/rafael.jpeg" alt="task-user"
-                                                            class="thumb-sm rounded-circle mr-2">
-                                                        <p>
-                                                            <span class="font-bold font-secondary">Manuel and Rafael
-                                                            </span>
-                                                        </p>
-                                                    </a>
-                                                </a>
-
-                                            </p>
-                                        </div>
-                                    </li>
-
-                                    <li id="task4" class="ui-sortable-handle">
-                                        Module: Web App
-                                        <p>Advice about dangerous days (statistics).</p>
-                                        <div class="clearfix"></div>
-                                        <div class="mt-3">
-                                            <p class="mb-0">
-                                                <a href="" class="text-muted">
-                                                    <a href="/#team">
-                                                        <img src="assets/img/team/manuel.jpeg" alt="task-user"
-                                                            class="thumb-sm rounded-circle mr-2">
-                                                        <img src="assets/img/team/rafael.jpeg" alt="task-user"
-                                                            class="thumb-sm rounded-circle mr-2">
-                                                        <p>
-                                                            <span class="font-bold font-secondary">Manuel and Rafael
-                                                            </span>
-                                                        </p>
-                                                    </a>
-                                                </a>
-
-                                            </p>
-                                        </div>
-                                    </li>
                                     
-
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card-box">
-                                <h4 class="text-dark header-title">In Progress</h4>
-                                <ul class="sortable-list taskList list-unstyled ui-sortable" id="inprogress">
                                     
-
-                                    <li id="task4" class="ui-sortable-handle">
-                                        Module: Web App
-                                        <p>Ambulance routes.</p>
-                                        <div class="clearfix"></div>
-                                        <div class="mt-3">
-                                            <p class="mb-0">
-                                                <a href="" class="text-muted">
-                                                    <a href="/#team">
-                                                        <img src="assets/img/team/manuel.jpeg" alt="task-user"
-                                                            class="thumb-sm rounded-circle mr-2">
-                                                        <img src="assets/img/team/rafael.jpeg" alt="task-user"
-                                                            class="thumb-sm rounded-circle mr-2">
-                                                        <img src="assets/img/team/raquel.jpeg" alt="task-user"
-                                                            class="thumb-sm rounded-circle mr-2">
-                                                        <p>
-                                                            <span class="font-bold font-secondary">Manuel, Rafael and Raquel
-                                                            </span>
-                                                        </p>
-                                                    </a>
-                                                </a>
-
-                                            </p>
-                                        </div>
-                                    </li>
-
-                                    <li id="task3" class="ui-sortable-handle">
-                                        Module: Communication
-                                        <p>Improve gateway detection algorithm.</p>
-                                        <div class="clearfix"></div>
-                                        <div class="mt-3">
-                                            <p class="mb-0">
-                                                <a href="" class="text-muted"><img src="assets/img/team/lucia.jpeg"
-                                                        alt="task-user" class="thumb-sm rounded-circle mr-2">
-                                                    <a href="/#team">
-                                                        
-                                                        <img src="assets/img/team/rodrigo.jpeg" alt="task-user"
-                                                            class="thumb-sm rounded-circle mr-2">
-
-                                                        <p>
-                                                            <span class="font-bold font-secondary">Lúcia
-                                                                and Rodrigo</span>
-                                                        </p>
-                                                    </a>
-                                                </a>
-
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li id="task3" class="ui-sortable-handle">
-                                        Module: Communication
-                                        <p>Add livestream of gateway car.</p>
+                                    <li id="task10" class="ui-sortable-handle">
+                                        Module: Web App & Communication
+                                        <p>Test the project and record video</p>
                                         <div class="clearfix"></div>
                                         <div class="mt-3">
                                             <p class="mb-0">
@@ -306,38 +212,19 @@
                                                     <a href="/#team">
                                                         <img src="assets/img/team/lucia.jpeg" alt="task-user"
                                                             class="thumb-sm rounded-circle mr-2">
-                                                        <img src="assets/img/team/rodrigo.jpeg" alt="task-user"
-                                                            class="thumb-sm rounded-circle mr-2">
-                                                        <p>
-                                                            <span class="font-bold font-secondary">Lúcia
-                                                                and Rodrigo</span>
-                                                        </p>
-                                                    </a>
-                                                </a>
-
-                                            </p>
-                                        </div>
-                                    </li>
-
-                                    
-
-
-                                    <li id="task4" class="ui-sortable-handle">
-                                        Module: Web App
-                                        <p>In severity calculations get in count meteorology and car messages like oil
-                                            pressure, airbags, engine temperature.</p>
-                                        <div class="clearfix"></div>
-                                        <div class="mt-3">
-                                            <p class="mb-0">
-                                                <a href="" class="text-muted">
-                                                    <a href="/#team">
                                                         <img src="assets/img/team/manuel.jpeg" alt="task-user"
                                                             class="thumb-sm rounded-circle mr-2">
                                                         <img src="assets/img/team/rafael.jpeg" alt="task-user"
                                                             class="thumb-sm rounded-circle mr-2">
+                                                        <img src="assets/img/team/raquel.jpeg" alt="task-user"
+                                                            class="thumb-sm rounded-circle mr-2">
+                                                        <img src="assets/img/team/rodrigo.jpeg" alt="task-user"
+                                                            class="thumb-sm rounded-circle mr-2">
                                                         <p>
-                                                            <span class="font-bold font-secondary">Manuel and Rafael
-                                                            </span>
+                                                            <span class="font-bold font-secondary">Lúcia, Manuel,
+                                                                Rafael,
+                                                                Raquel
+                                                                and Rodrigo</span>
                                                         </p>
                                                     </a>
                                                 </a>
@@ -348,6 +235,8 @@
                                 </ul>
                             </div>
                         </div>
+
+
                         <div class="col-lg-4">
                             <div class="card-box">
                                 <h4 class="text-dark header-title">Completed</h4>
@@ -378,7 +267,6 @@
                                                         </p>
                                                     </a>
                                                 </a>
-
                                             </p>
                                         </div>
                                     </li>
@@ -508,6 +396,28 @@
                                     </li>
                                     <li id="task4" class="ui-sortable-handle">
                                         Module: Web App
+                                        <p>In severity calculations get in count engine temperature (fire).</p>
+                                        <div class="clearfix"></div>
+                                        <div class="mt-3">
+                                            <p class="mb-0">
+                                                <a href="" class="text-muted">
+                                                    <a href="/#team">
+                                                        <img src="assets/img/team/manuel.jpeg" alt="task-user"
+                                                            class="thumb-sm rounded-circle mr-2">
+                                                        <img src="assets/img/team/rafael.jpeg" alt="task-user"
+                                                            class="thumb-sm rounded-circle mr-2">
+                                                        <p>
+                                                            <span class="font-bold font-secondary">Manuel and Rafael
+                                                            </span>
+                                                        </p>
+                                                    </a>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li id="task4" class="ui-sortable-handle">
+                                        Module: Web App
                                         <p>Add live location of emergency services.</p>
                                         <div class="clearfix"></div>
                                         <div class="mt-3">
@@ -523,6 +433,29 @@
                                                         <p>
                                                             <span class="font-bold font-secondary">Manuel, Rafael and Raquel
                                                             </span>
+                                                        </p>
+                                                    </a>
+                                                </a>
+
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li id="task3" class="ui-sortable-handle">
+                                        Module: Communication
+                                        <p>Add livestream of gateway car, near cars and RSUs.</p>
+                                        <div class="clearfix"></div>
+                                        <div class="mt-3">
+                                            <p class="mb-0">
+                                                <a href="" class="text-muted">
+                                                    <a href="/#team">
+                                                        <img src="assets/img/team/lucia.jpeg" alt="task-user"
+                                                            class="thumb-sm rounded-circle mr-2">
+                                                        <img src="assets/img/team/rodrigo.jpeg" alt="task-user"
+                                                            class="thumb-sm rounded-circle mr-2">
+                                                        <p>
+                                                            <span class="font-bold font-secondary">Lúcia
+                                                                and Rodrigo</span>
                                                         </p>
                                                     </a>
                                                 </a>
@@ -556,6 +489,76 @@
                                         </div>
                                     </li>
                                     
+                                    <li id="task4" class="ui-sortable-handle">
+                                        Module: Web App
+                                        <p>Ambulance routes.</p>
+                                        <div class="clearfix"></div>
+                                        <div class="mt-3">
+                                            <p class="mb-0">
+                                                <a href="" class="text-muted">
+                                                    <a href="/#team">
+                                                        <img src="assets/img/team/raquel.jpeg" alt="task-user"
+                                                            class="thumb-sm rounded-circle mr-2">
+                                                        <img src="assets/img/team/rodrigo.jpeg" alt="task-user"
+                                                            class="thumb-sm rounded-circle mr-2">
+                                                        <p>
+                                                            <span class="font-bold font-secondary">Raquel and Rodrigo
+                                                            </span>
+                                                        </p>
+                                                    </a>
+                                                </a>
+
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li id="task4" class="ui-sortable-handle">
+                                        Module: Web App
+                                        <p>Implement some details.</p>
+                                        <div class="clearfix"></div>
+                                        <div class="mt-3">
+                                            <p class="mb-0">
+                                                <a href="" class="text-muted">
+                                                    <a href="/#team">
+                                                        <img src="assets/img/team/raquel.jpeg" alt="task-user"
+                                                            class="thumb-sm rounded-circle mr-2">
+                                                        <img src="assets/img/team/rodrigo.jpeg" alt="task-user"
+                                                            class="thumb-sm rounded-circle mr-2">
+                                                        <p>
+                                                            <span class="font-bold font-secondary">Raquel and Rodrigo
+                                                            </span>
+                                                        </p>
+                                                    </a>
+                                                </a>
+
+                                            </p>
+                                        </div>
+                                    </li>
+                                    
+                                    <li id="task3" class="ui-sortable-handle">
+                                        Module: Communication
+                                        <p>Improve gateway detection algorithm.</p>
+                                        <div class="clearfix"></div>
+                                        <div class="mt-3">
+                                            <p class="mb-0">
+                                                <a href="" class="text-muted"><img src="assets/img/team/lucia.jpeg"
+                                                        alt="task-user" class="thumb-sm rounded-circle mr-2">
+                                                    <a href="/#team">
+                                                        
+                                                        <img src="assets/img/team/rodrigo.jpeg" alt="task-user"
+                                                            class="thumb-sm rounded-circle mr-2">
+
+                                                        <p>
+                                                            <span class="font-bold font-secondary">Lúcia
+                                                                and Rodrigo</span>
+                                                        </p>
+                                                    </a>
+                                                </a>
+
+                                            </p>
+                                        </div>
+                                    </li>
+
                                 </ul>
                             </div>
                         </div>
